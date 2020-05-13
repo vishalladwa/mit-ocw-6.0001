@@ -28,7 +28,7 @@ while True:
     
     current_savings = 0.0
     number_of_months = 0
-    while number_of_months <= 36:        
+    while number_of_months < 36:   # counting starts from 0, it shouldn't be less than equal to 36        
         #print('current_savings: {}'.format(current_savings))
         #print('number_of_months: {}'.format(number_of_months))
         current_savings += monthly_savings + ((current_savings * annual_return) / 12)
